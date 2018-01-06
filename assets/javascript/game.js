@@ -23,6 +23,7 @@ function compLetter()
 	console.log(letter);
 }
 
+
 document.onkeyup = function(event)
 {
 	var userGuess = event.key;
@@ -54,6 +55,8 @@ document.onkeyup = function(event)
 
 			guessesLeft += 10;
 			document.getElementById("guesses").innerHTML = "Guesses left: " + guessesLeft;
+
+			compLetter();
 		}
 
 	}
@@ -70,5 +73,7 @@ document.onkeyup = function(event)
 
 		guessesLeft = 10;
 		document.getElementById("guesses").innerHTML = "Guesses left: " + guessesLeft;
+
+		compLetter();
 	}
 };
